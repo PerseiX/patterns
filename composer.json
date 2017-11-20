@@ -1,15 +1,16 @@
 {
-	"name"       : "persei/builder",
-	"authors"    : [
+	"name"    : "persei/builder",
+	"authors" : [
 		{
 			"name" : "PerseiX",
 			"email": "kamilrytel2@gmail.com"
 		}
 	],
-	"autoload"   : {
+	"autoload": {
 		"psr-4": {
-			"Builder\\": "src/"
+			"Builder\\"        : "Builder/src/",
+			"AbstractFactory\\": "AbstractFactory/src/"
 		}
 	},
-	"require"    : {}
+	"require" : {}
 }
