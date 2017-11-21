@@ -4,8 +4,9 @@ namespace Builder\Parts;
 
 /**
  * Class Engine
+ * @package Builder\Parts
  */
-class Engine implements PartInterface
+final class Engine implements PartInterface
 {
 
 }

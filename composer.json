@@ -12,5 +12,7 @@
 			"AbstractFactory\\": "AbstractFactory/src/"
 		}
 	},
-	"require" : {}
+	"require" : {
+		"phpunit/phpunit": "^6.4"
+	}
 }

@@ -3,13 +3,13 @@
 namespace AbstractFactory\Elements;
 
 /**
- * Class AbstractWriter
+ * Class AbstractProduct
  * @package AbstractFactory\Elements
  */
-abstract class AbstractWriter
+interface ReaderInterface
 {
 	/**
 	 * @return string
 	 */
-	public abstract function write(): string;
+	public function read(): string;
 }

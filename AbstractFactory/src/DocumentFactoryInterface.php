@@ -2,8 +2,8 @@
 
 namespace AbstractFactory;
 
-use AbstractFactory\Elements\AbstractReader;
-use AbstractFactory\Elements\AbstractWriter;
+use AbstractFactory\Elements\ReaderInterface;
+use AbstractFactory\Elements\WriterInterface;
 
 /**
  * Class DocumentFactory
@@ -11,12 +11,12 @@ use AbstractFactory\Elements\AbstractWriter;
 interface DocumentFactoryInterface
 {
 	/**
-	 * @return AbstractReader
+	 * @return ReaderInterface
 	 */
-	public function createReader(): AbstractReader;
+	public function createReader(): ReaderInterface;
 
 	/**
-	 * @return AbstractWriter
+	 * @return WriterInterface
 	 */
-	public function createWriter(): AbstractWriter;
+	public function createWriter(): WriterInterface;
 }

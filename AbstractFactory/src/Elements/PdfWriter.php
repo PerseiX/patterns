@@ -6,7 +6,7 @@ namespace AbstractFactory\Elements;
  * Class PdfWriter
  * @package AbstractFactory\Elements
  */
-class PdfWriter extends AbstractWriter
+class PdfWriter implements WriterInterface
 {
 
 	/**
@@ -14,6 +14,6 @@ class PdfWriter extends AbstractWriter
 	 */
 	public function write(): string
 	{
-		return "WRITE pdf..";
+		return "PDF write";
 	}
 }

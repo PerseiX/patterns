@@ -6,7 +6,7 @@ namespace Builder\Parts;
  * Class Door
  * @package Builder\Parts
  */
-class Door implements PartInterface
+final class Door implements PartInterface
 {
 
 }

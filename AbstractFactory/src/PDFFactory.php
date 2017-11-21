@@ -2,8 +2,8 @@
 
 namespace AbstractFactory;
 
-use AbstractFactory\Elements\AbstractReader;
-use AbstractFactory\Elements\AbstractWriter;
+use AbstractFactory\Elements\WriterInterface;
+	use AbstractFactory\Elements\ReaderInterface;
 use AbstractFactory\Elements\PDFReader;
 use AbstractFactory\Elements\PdfWriter;
 
@@ -15,17 +15,17 @@ class PDFFactory implements DocumentFactoryInterface
 {
 
 	/**
-	 * @return AbstractReader
+	 * @return ReaderInterface
 	 */
-	public function createReader(): AbstractReader
+	public function createReader(): ReaderInterface
 	{
 		return new PDFReader();
 	}
 
 	/**
-	 * @return AbstractWriter
+	 * @return WriterInterface
 	 */
-	public function createWriter(): AbstractWriter
+	public function createWriter(): WriterInterface
 	{
 		return new PdfWriter();
 	}

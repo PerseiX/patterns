@@ -2,8 +2,8 @@
 
 namespace AbstractFactory;
 
-use AbstractFactory\Elements\AbstractReader;
-use AbstractFactory\Elements\AbstractWriter;
+use AbstractFactory\Elements\ReaderInterface;
+use AbstractFactory\Elements\WriterInterface;
 use AbstractFactory\Elements\RTFReader;
 use AbstractFactory\Elements\RTFWriter;
 
@@ -15,17 +15,17 @@ class RTFFactory implements DocumentFactoryInterface
 {
 
 	/**
-	 * @return AbstractReader
+	 * @return ReaderInterface
 	 */
-	public function createReader(): AbstractReader
+	public function createReader(): ReaderInterface
 	{
 		return new RTFReader();
 	}
 
 	/**
-	 * @return AbstractWriter
+	 * @return WriterInterface
 	 */
-	public function createWriter(): AbstractWriter
+	public function createWriter(): WriterInterface
 	{
 		return new RTFWriter();
 	}

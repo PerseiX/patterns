@@ -3,10 +3,10 @@
 namespace AbstractFactory\Elements;
 
 /**
- * Class Car
+ * Class RTFReader
  * @package AbstractFactory\Elements
  */
-class RTFReader extends AbstractReader
+class RTFReader implements ReaderInterface
 {
 
 	/**
@@ -14,6 +14,6 @@ class RTFReader extends AbstractReader
 	 */
 	public function read(): string
 	{
-		return "RTF read...";
+		return "RTF read";
 	}
 }

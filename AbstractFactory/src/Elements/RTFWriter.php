@@ -6,7 +6,7 @@ namespace AbstractFactory\Elements;
  * Class RTFWriter
  * @package AbstractFactory\Elements
  */
-class RTFWriter extends AbstractWriter
+class RTFWriter implements WriterInterface
 {
 
 	/**
@@ -14,6 +14,6 @@ class RTFWriter extends AbstractWriter
 	 */
 	public function write(): string
 	{
-		return "WRITE rtf..";
+		return "RTF write";
 	}
 }

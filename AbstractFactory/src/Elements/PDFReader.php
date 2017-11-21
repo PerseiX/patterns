@@ -6,7 +6,7 @@ namespace AbstractFactory\Elements;
  * Class PDFReader
  * @package AbstractFactory\Elements
  */
-class PDFReader extends AbstractReader
+class PDFReader implements ReaderInterface
 {
 
 	/**
@@ -14,6 +14,6 @@ class PDFReader extends AbstractReader
 	 */
 	public function read(): string
 	{
-		return "PDF read...";
+		return "PDF read";
 	}
 }
