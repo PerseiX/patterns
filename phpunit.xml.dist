@@ -11,6 +11,7 @@
         <testsuite name="Tests">
             <directory>Builder/*</directory>
             <directory>AbstractFactory/*</directory>
+            <directory>FactoryMethod/*</directory>
         </testsuite>
     </testsuites>
 </phpunit>

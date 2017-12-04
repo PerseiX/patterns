@@ -9,7 +9,8 @@
 	"autoload": {
 		"psr-4": {
 			"Builder\\"        : "Builder/src/",
-			"AbstractFactory\\": "AbstractFactory/src/"
+			"AbstractFactory\\": "AbstractFactory/src/",
+			"FactoryMethod\\"  : "FactoryMethod/src/"
 		}
 	},
 	"require" : {
