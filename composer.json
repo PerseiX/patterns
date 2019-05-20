@@ -1,16 +1,18 @@
 {
-	"name"    : "persei/builder",
+	"name"    : "persei/patterns",
 	"authors" : [
 		{
 			"name" : "PerseiX",
 			"email": "kamilrytel2@gmail.com"
 		}
 	],
+	"description": "This is my test repository, when I  implement basic usage of the most important patterns.",
 	"autoload": {
 		"psr-4": {
 			"Builder\\"        : "Builder/src/",
 			"AbstractFactory\\": "AbstractFactory/src/",
-			"FactoryMethod\\"  : "FactoryMethod/src/"
+			"FactoryMethod\\"  : "FactoryMethod/src/",
+			"Prototype\\"  : "Prototype/src/"
 		}
 	},
 	"require" : {
