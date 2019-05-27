@@ -12,7 +12,8 @@
 			"Builder\\"        : "Builder/src/",
 			"AbstractFactory\\": "AbstractFactory/src/",
 			"FactoryMethod\\"  : "FactoryMethod/src/",
-			"Prototype\\"  : "Prototype/src/"
+			"Prototype\\"  : "Prototype/src/",
+			"Adapter\\"  : "Adapter/src/"
 		}
 	},
 	"require" : {

@@ -13,6 +13,7 @@
             <directory>AbstractFactory/*</directory>
             <directory>FactoryMethod/*</directory>
             <directory>Prototype/*</directory>
+            <directory>Adapter/*</directory>
         </testsuite>
     </testsuites>
 </phpunit>
