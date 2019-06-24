@@ -14,6 +14,7 @@
             <directory>FactoryMethod/*</directory>
             <directory>Prototype/*</directory>
             <directory>Adapter/*</directory>
+            <directory>Decorator/*</directory>
         </testsuite>
     </testsuites>
 </phpunit>

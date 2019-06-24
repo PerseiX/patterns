@@ -13,7 +13,8 @@
 			"AbstractFactory\\": "AbstractFactory/src/",
 			"FactoryMethod\\"  : "FactoryMethod/src/",
 			"Prototype\\"  : "Prototype/src/",
-			"Adapter\\"  : "Adapter/src/"
+			"Adapter\\"  : "Adapter/src/",
+			"Decorator\\"  : "Decorator/src/"
 		}
 	},
 	"require" : {
