@@ -1,4 +1,4 @@
-FROM php:7.1-fpm
+FROM php:7.2-fpm
 
 RUN apt-get update && apt-get install -yq git zip unzip libpng-dev  libzip-dev libpq-dev mc && \
     docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql && \

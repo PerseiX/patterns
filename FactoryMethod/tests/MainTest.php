@@ -22,18 +22,16 @@ class MainTest extends TestCase
 
 	public function testDeutschCar()
 	{
-		$deutschCarFacort = new DeutschCarFactory();
-		$car              = $deutschCarFacort->create(FactoryMethod::CAR['ger_car_first']);
+		$deutschCarFactory = new DeutschCarFactory();
+		$car              = $deutschCarFactory->create(FactoryMethod::CAR['ger_car_first']);
 		$this->assertInstanceOf(Audi::class, $car);
-		$car = $deutschCarFacort->create(FactoryMethod::CAR['ger_car_second']);
+		$car = $deutschCarFactory->create(FactoryMethod::CAR['ger_car_second']);
 		$this->assertInstanceOf(Bmw::class, $car);
 	}
 
-	/**
-	 * @expectedException Prophecy\Exception\Doubler\ClassNotFoundException
-	 */
 	public function testNotFound()
 	{
+        $this->expectException('Prophecy\Exception\Doubler\ClassNotFoundException');
 		$factory = new PolishCarFactory();
 		$factory->create('my-type');
 	}
