@@ -4,7 +4,6 @@ namespace Decorator;
 
 class SmallPizza extends BasePizza
 {
-    
     /**
      * @return string
      */
