@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                docker build -f .docker/Dockerfile -t pattern-app .
+                sh "docker build -f .docker/Dockerfile -t pattern-app ."
             }
         }
         stage('Test') {
             steps {
-               docker run -it pattern-app vendor/phpunit/phpunit/phpunit
+               sh "docker run -it pattern-app vendor/phpunit/phpunit/phpunit"
             }
         }
     }
