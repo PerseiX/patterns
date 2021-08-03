@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-               sh "docker run -it pattern-app vendor/phpunit/phpunit/phpunit"
+               sh "docker run pattern-app vendor/phpunit/phpunit/phpunit"
             }
         }
     }
